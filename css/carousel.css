@@ -33,6 +33,22 @@ body {
     min-width: 100%;
     height: 32rem;
   }
+
+  .carousel-item h1  {
+    text-transform: uppercase;
+    color: #B13336;
+  }
+
+  .carousel-item p {
+    color:#3E4095;
+
+  }
+  
+  .carousel-item ul li {
+
+    color:#3E4095;
+
+  }
   
   
   /* MARKETING CONTENT
