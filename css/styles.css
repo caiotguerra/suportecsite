@@ -1,0 +1,23 @@
+/*PRODUTO*/
+.produto-detalhe{
+margin-top: 100px;
+}
+.produto-detalhe h1 {
+    margin-top: 0px;
+    font-weight: 100;
+}
+.produto-detalhe .valor {
+    font-size: 32px;
+    margin-top: 20px;
+}
+.produto-detalhe .especificacao{
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+.produto-detalhe .especificacao h2 {
+    font-size: 22px;
+}
+.produto-detalhe .especificacao h3 {
+    font-size: 16px;
+}
