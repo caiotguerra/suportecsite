@@ -50,7 +50,23 @@
     <div class="container produto-detalhe">
       <div class="row descricao">
         <div class="col-5">
-          <img src="https://picsum.photos/800" class="img-fluid"  max-width: 100% height: auto/>
+          <div class="row">
+            <div class="gallery-container">
+              <img id="expandedImg" src="images/img_nature.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
         </div>
         <div class="col-7">
           <h1>Kit suporte condensador + evaporador</h1>
@@ -319,6 +335,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
 
 
   </body>
