@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body>
+  <body onload = loadFunction()>
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container min">
@@ -52,10 +52,10 @@
         <div class="col-5">
           <div class="row">
             <div class="gallery-container">
-              <img id="expandedImg" src="images/img_nature.jpg" style="width:100%">
+              <img id="expandedImg" style="width:100%">
             </div>
             <div class="column">
-              <img src="images/img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+              <img src="images/img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);" id="first">
             </div>
             <div class="column">
               <img src="images/img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
@@ -125,6 +125,12 @@
         expandImg.src = imgs.src;
         expandImg.parentElement.style.display = "block";
       }
+      function loadFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = "images/img_nature.jpg";
+        expandImg.parentElement.style.display = "block";
+      }
+      
       </script>
 
 

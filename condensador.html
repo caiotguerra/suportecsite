@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body>
+  <body onload = loadFunction()>
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container min">
@@ -315,6 +315,11 @@
       function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
         expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+      function loadFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = "images/img_nature.jpg";
         expandImg.parentElement.style.display = "block";
       }
       </script>
