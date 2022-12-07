@@ -47,7 +47,13 @@ margin-top: 100px;
   }
   
   /* The expanding image container */
-  .gallery-container {
+  .produto-detalhe .gallery-container {
     position: relative;
     display: none;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
   }
+  .produto-detalhe .column,  .produto-detalhe .container {
+    border: 1px solid #ccc;
+  }
+  
